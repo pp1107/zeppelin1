@@ -526,7 +526,7 @@
 		display: block;
 	}
 	.block1 .col-md-6:first-child{
-		max-width: 320px;
+		max-width: 320px !important;
 	}
 }
 

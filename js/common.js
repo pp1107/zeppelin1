@@ -42,7 +42,7 @@ $(window).scroll();//ensure if you're in current position when page is refreshed
     $('.loop').owlCarousel({
         center: true,
         items:4,
-    animateIn: 'fadeIn',
+   smartSpeed:1000,
         dots:true,
         loop:true,
         autoplay:true,
@@ -80,7 +80,7 @@ $(window).scroll();//ensure if you're in current position when page is refreshed
     });
     $('.bxslider').bxSlider({
       pagerCustom: '#bx-pager',
-      
+
   });
         $('.bxslider1').bxSlider({
       pagerCustom: '#bx-pager1'
