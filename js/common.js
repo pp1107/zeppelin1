@@ -43,6 +43,7 @@ $(window).scroll();//ensure if you're in current position when page is refreshed
         center: true,
         items:4,
    smartSpeed:1000,
+   lazyLoad: true,
         dots:true,
         loop:true,
         autoplay:true,
@@ -71,7 +72,8 @@ $(window).scroll();//ensure if you're in current position when page is refreshed
         items:1,
         dots:true,
         loop:true,
-        margin:0
+        margin:0,
+        lazyLoad: true
     });
 
     $('.block2__list').click(function(){
