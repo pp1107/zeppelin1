@@ -525,6 +525,9 @@
 		right: 0;
 		display: block;
 	}
+	.block1 .col-md-6:first-child{
+		max-width: 320px;
+	}
 }
 
 /* Custom, iPhone Retina */
