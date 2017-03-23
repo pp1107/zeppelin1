@@ -2,6 +2,22 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.block7-img-wrapper img {
+		display: none !important;
+	}
+	.block7-img-wrapper{
+		max-width: 480px;
+		width: 100%;
+		height: 400px;
+		background-image: url(../img/block7-img-mobile.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		margin: 0 auto;
+	}
+	.block7-img-wrapper{
+		max-width: 450px;
+	}
 	.block1{
 		background-image: none;
 		
@@ -159,22 +175,7 @@
 	.header__active nav ul li{
 		margin-right: 0;
 	}
-	.block7-img-wrapper img {
-		display: none !important;
-	}
-	.block7-img-wrapper{
-		max-width: 480px;
-		width: 100%;
-		height: 400px;
-		background-image: url(../img/block7-img-mobile.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center center;
-		margin: 0 auto;
-	}
-	.block7-img-wrapper{
-		max-width: 450px;
-	}
+
 	header{
 		padding: 10px 0 0;
 	}
@@ -557,14 +558,31 @@
 	.mobile-mnu{
 		display: none;
 	}
-	@-webkit-keyframes animationblock {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.block__main{
+		background-attachment: fixed;
+		background-size: cover;
+	}
+		.block6 .container{
+		width: 1120px;
+		zoom: 85%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1201px) {
+		@-webkit-keyframes animationblock {
 		30%     {right: 120px;left: auto;}
 		60%     {bottom: 0;right: 120px;left: auto;top: auto;}
 		100%    {left: 95px;top: 50px;right: auto;bottom: auto;}
 	}
 	.absolute-img1 {
 		-webkit-animation-name: animationblock;
-		-webkit-animation-duration: 4.1s;
+		-webkit-animation-duration: 4s;
 		-webkit-animation-iteration-count: infinite;
 		-webkit-animation-timing-function: ease-in-out;
 		-webkit-animation-delay: 2s;
@@ -596,18 +614,10 @@
 		-webkit-animation-timing-function: ease-in-out;
 		-webkit-animation-delay: 2s;
 	}
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-	.block__main{
-		background-attachment: fixed;
-		background-size: cover;
+			.block6 .container{
+		width: 1170px;
+		zoom: 100%;
 	}
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
 	.block__main{
 		background-size: cover;
 	}
