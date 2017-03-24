@@ -47,6 +47,7 @@ $(window).scroll();//ensure if you're in current position when page is refreshed
         dots:true,
         loop:true,
         autoplay:true,
+        autoHeight: true,
         autoplayTimeout:1000,
         margin:0,
         responsive:{
@@ -63,7 +64,7 @@ $(window).scroll();//ensure if you're in current position when page is refreshed
                 items:2
             },
             320:{
-                items:2
+                items:1
             }
         }
     });

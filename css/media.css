@@ -80,9 +80,6 @@
 		max-width: 300px;
 		width: 100%;
 	}
-	.loop img{
-		height: 250px !important;
-	}
 }
 
 /* Medium Devices, Desktops */
@@ -263,9 +260,6 @@
 	.block1-in__item{
 		height: auto;
 	}
-	.loop img{
-		height: 240px;
-	}
 	.block__slider:after{
 		display: none;
 	}
@@ -367,9 +361,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.loop img{
+		margin-left: 0 !important;
+	}
 	.wrapper-video{
 		background-image: none;
-		
 	}
 	.block7-img-wrapper{
 		height: 300px;
@@ -435,9 +431,6 @@
 	.block11__btn{
 		right: 0;
 		font-size: 18px;
-	}
-	.loop img{
-		height: 165px;
 	}
 	.block9 strong{
 		line-height: 24px;
@@ -646,8 +639,13 @@
 	.block__main{
 		background-size: 140%;
 	}
-
-
+}
+@media only screen and (min-width : 1440px) {
+	.block__main{
+		background-size: cover;
+		background-position: 55% -100px;
+	}
+}
 
 	.mfp-no-margins img.mfp-img {
 		padding: 0;
