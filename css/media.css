@@ -317,6 +317,8 @@
 		width: 100%;
 		position: relative;
 		left: 10px;
+		font-size: 18px;
+		padding: 0 0 0 70px;
 	}
 	.block11 img{
 		right: 0;
@@ -367,11 +369,11 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.block__main {
-		padding: 30px 0 20px;
+		padding: 0px 0 20px;
 		background-position: 81% bottom;
 	}
 	.block__main h3 {
-		margin: 50px 0 320px;
+		margin: 0px 0 320px;
 	}
 	.loop img{
 		margin-left: 0 !important;
@@ -594,11 +596,24 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1201px) {
-	@-webkit-keyframes animationblock {
-		30%     {right: 120px;left: auto;}
-		60%     {bottom: 0;right: 120px;left: auto;top: auto;}
-		100%    {left: 95px;top: 50px;right: auto;bottom: auto;}
+		@-webkit-keyframes animationsection {
+		0%     {transform:rotate(100deg);}
+		30%     {transform:rotate(100deg);}
+		60%     {transform:rotate(100deg);}
+		100%    {transform:rotate(100deg);}
 	}
+	.block7-img-wrapper {
+		-webkit-animation-name: animationsection;
+		-webkit-animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 2s;
+	}
+	@-webkit-keyframes animationblock {
+		0%     {transform: scale(1.1)}
+		30%     {transform: scale(1.1)}
+		60%     {transform: scale(1.1)}
+		100%    {transform: scale(1.1)}
 	.absolute-img1 {
 		-webkit-animation-name: animationblock;
 		-webkit-animation-duration: 4s;
@@ -609,9 +624,9 @@
 
 
 	@-webkit-keyframes animationblockk {
-		30%     {bottom: 0px;right: 75px;top: auto;left: auto;}
-		60%     {left: 50px;right: auto;top: 50px;bottom: auto;}
-		100%    {left: auto;right: 75px;top: 50px;bottom: auto;}
+		30%     {}
+		60%     {}
+		100%    {}
 	}
 	.absolute-img2 {
 		-webkit-animation-name: animationblockk;
@@ -622,9 +637,9 @@
 	}
 
 	@-webkit-keyframes animationblockkk {
-		30%     {left: 75px;top: 50px;bottom: auto;right: auto;}
-		60%     {bottom: auto;top: 50px;left: auto;right: 75px;}
-		100%    {bottom: 0;right: 75px;left: auto;top: auto;}
+		30%     {}
+		60%     {}
+		100%    {}
 	}
 	.absolute-img3 {
 		-webkit-animation-name: animationblockkk;
@@ -663,29 +678,29 @@
 		
 	}
 	.block1:before{
-		content: '';
-		position: absolute;
-		left: -20%;
-		top: 20%;
-		bottom: 0;
-		max-width: 791px;
-		width: 100%;
-		height: 874px;
-		margin: auto 0;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("../img/honeycomb-contour1.png");
+content: '';
+    position: absolute;
+    left: -18%;
+    top: 20%;
+    bottom: 0;
+    max-width: 791px;
+    width: 100%;
+    height: 874px;
+    margin: auto 0;
+    background-size: 664px 874px;
+    background-repeat: no-repeat;
+    background-image: url(../img/honeycomb-contour1.png);
 	}
 		.block1:after{
 		content: '';
 		position: absolute;
-		right: -25%;
-		bottom: 0%;
+		right: -27%;
+		bottom: -1%;
 		max-width: 791px;
 		width: 100%;
 		height: 874px;
 		margin: auto 0;
-		background-size: contain;
+		background-size: 638px 814px;
 		background-repeat: no-repeat;
 		background-image: url("../img/honeycomb-contour2.png");
 	}
@@ -697,7 +712,7 @@
 	}
 		.block1:after{
 		right: -15%;
-		bottom: 0%;
+		bottom: -1%;
 	}
 }
 
