@@ -2,6 +2,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.block1 ul li{
+		white-space: normal;
+		line-height: 18px;
+		margin-bottom: 37px;
+	}
 	.block7-img-wrapper img {
 		display: none !important;
 	}
@@ -362,12 +367,12 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.block__main {
-    padding: 30px 0 20px;
-    background-position: 81% bottom;
-}
-.block__main h3 {
-    margin: 50px 0 320px;
-}
+		padding: 30px 0 20px;
+		background-position: 81% bottom;
+	}
+	.block__main h3 {
+		margin: 50px 0 320px;
+	}
 	.loop img{
 		margin-left: 0 !important;
 	}
@@ -514,12 +519,12 @@
 		top: -50px;
 		zoom: 90%;
 	}
-.block__main__btn {
-    max-width: 155px;
-    font-size: 18px;
-    height: 55px;
-    line-height: 55px;
-}
+	.block__main__btn {
+		max-width: 155px;
+		font-size: 18px;
+		height: 55px;
+		line-height: 55px;
+	}
 	h1 strong {
 		font-size: 70px;
 	}
@@ -542,12 +547,12 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 374px) {
-.block__main__btn {
-    max-width: 130px;
-    font-size: 18px;
-    height: 55px;
-    line-height: 55px;
-}
+	.block__main__btn {
+		max-width: 130px;
+		font-size: 18px;
+		height: 55px;
+		line-height: 55px;
+	}
 }
 
 
@@ -581,7 +586,7 @@
 		background-attachment: fixed;
 		background-size: cover;
 	}
-		.block6 .container{
+	.block6 .container{
 		width: 1120px;
 		zoom: 85%;
 	}
@@ -589,7 +594,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1201px) {
-		@-webkit-keyframes animationblock {
+	@-webkit-keyframes animationblock {
 		30%     {right: 120px;left: auto;}
 		60%     {bottom: 0;right: 120px;left: auto;top: auto;}
 		100%    {left: 95px;top: 50px;right: auto;bottom: auto;}
@@ -616,7 +621,7 @@
 		-webkit-animation-delay: 2s;
 	}
 
-		@-webkit-keyframes animationblockkk {
+	@-webkit-keyframes animationblockkk {
 		30%     {left: 75px;top: 50px;bottom: auto;right: auto;}
 		60%     {bottom: auto;top: 50px;left: auto;right: 75px;}
 		100%    {bottom: 0;right: 75px;left: auto;top: auto;}
@@ -628,7 +633,7 @@
 		-webkit-animation-timing-function: ease-in-out;
 		-webkit-animation-delay: 2s;
 	}
-			.block6 .container{
+	.block6 .container{
 		width: 1170px;
 		zoom: 100%;
 	}
@@ -652,35 +657,78 @@
 		background-size: cover;
 		background-position: 55% -100px;
 	}
+	.block1{
+		position: relative;
+		background-image: none;
+		
+	}
+	.block1:before{
+		content: '';
+		position: absolute;
+		left: -20%;
+		top: 20%;
+		bottom: 0;
+		max-width: 791px;
+		width: 100%;
+		height: 874px;
+		margin: auto 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url("../img/honeycomb-contour1.png");
+	}
+		.block1:after{
+		content: '';
+		position: absolute;
+		right: -25%;
+		bottom: 0%;
+		max-width: 791px;
+		width: 100%;
+		height: 874px;
+		margin: auto 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url("../img/honeycomb-contour2.png");
+	}
+}
+@media only screen and (min-width : 1680px) {
+	.block1:before{
+		left: -8%;
+		top: 20%;
+	}
+		.block1:after{
+		right: -15%;
+		bottom: 0%;
+	}
 }
 
-	.mfp-no-margins img.mfp-img {
-		padding: 0;
-	}
-	/* position of shadow behind the image */
-	.mfp-no-margins .mfp-figure:after {
-		top: 0;
-		bottom: 0;
-	}
-	/* padding for main container */
-	.mfp-no-margins .mfp-container {
-		padding: 0;
-	}
-	.mfp-counter{
-		font-size: 0;
-		width: 0;
-		height: 0;
-		display: none;
-	}
-	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		color: #000;
-	}
-	::-moz-placeholder { /* Firefox 19+ */
-		color: #000;
-	}
-	:-ms-input-placeholder { /* IE 10+ */
-		color: #000;
-	}
-	:-moz-placeholder { /* Firefox 18- */
-		color: #000;
-	}
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+.mfp-counter{
+	font-size: 0;
+	width: 0;
+	height: 0;
+	display: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #000;
+}
