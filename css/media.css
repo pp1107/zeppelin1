@@ -7,22 +7,6 @@
 		line-height: 18px;
 		margin-bottom: 37px;
 	}
-	.block7-img-wrapper img {
-		display: none !important;
-	}
-	.block7-img-wrapper{
-		max-width: 480px;
-		width: 100%;
-		height: 400px;
-		background-image: url(../img/block7-img-mobile.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center center;
-		margin: 0 auto;
-	}
-	.block7-img-wrapper{
-		max-width: 450px;
-	}
 	.block1{
 		background-image: none;
 		
@@ -81,20 +65,12 @@
 	.block8 ul{
 		left: -120px;
 	}
-	.block7-img-wrapper .absolute-img {
-		max-width: 300px;
-		width: 100%;
-	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.block5__title{
 		margin: 0;
-	}
-	.block7-img-wrapper .absolute-img {
-		max-width: 420px;
-		width: 100%;
 	}
 
 	.block1 .col-md-6:first-child{
@@ -381,9 +357,6 @@
 	.wrapper-video{
 		background-image: none;
 	}
-	.block7-img-wrapper{
-		height: 300px;
-	}
 	.block1-in__item{
 		padding: 27px 15px 20px;
 	}
@@ -596,58 +569,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1201px) {
-		@-webkit-keyframes animationsection {
-		0%     {transform:rotate(0deg);}
-		30%     {transform:rotate(100deg);}
-		60%     {transform:rotate(100deg);}
-		100%    {transform:rotate(100deg);}
-	}
-	.block7-img-wrapper {
-		-webkit-animation-name: animationsection;
-		-webkit-animation-duration: 4s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: ease-in-out;
-		-webkit-animation-delay: 2s;
-	}
-	@-webkit-keyframes animationblock {
-		0%     {transform: scale(1.1)}
-		30%     {zoom: 50%}
-		60%     {zoom: 50%}
-		100%    {zoom: 50%}
-	.absolute-img1 {
-		-webkit-animation-name: animationblock;
-		-webkit-animation-duration: 4s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: ease-in-out;
-		-webkit-animation-delay: 2s;
-	}
 
-
-	@-webkit-keyframes animationblockk {
-		30%     {}
-		60%     {}
-		100%    {}
-	}
-	.absolute-img2 {
-		-webkit-animation-name: animationblockk;
-		-webkit-animation-duration: 4s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: ease-in-out;
-		-webkit-animation-delay: 2s;
-	}
-
-	@-webkit-keyframes animationblockkk {
-		30%     {}
-		60%     {}
-		100%    {}
-	}
-	.absolute-img3 {
-		-webkit-animation-name: animationblockkk;
-		-webkit-animation-duration: 4s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: ease-in-out;
-		-webkit-animation-delay: 2s;
-	}
 	.block6 .container{
 		width: 1170px;
 		zoom: 100%;
