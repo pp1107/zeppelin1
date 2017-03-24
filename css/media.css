@@ -765,7 +765,7 @@ content: '';
     top: 0%;
     right: 0;
     bottom: 0;
-    background: url('/img/spinner.gif') #FFCA03 no-repeat 50% 50%;
+    background: url('../img/spinner.gif') #FFCA03 no-repeat 50% 50%;
     margin: -16px 0 0 -16px;
 
 }
