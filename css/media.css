@@ -597,7 +597,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1201px) {
 		@-webkit-keyframes animationsection {
-		0%     {transform:rotate(100deg);}
+		0%     {transform:rotate(0deg);}
 		30%     {transform:rotate(100deg);}
 		60%     {transform:rotate(100deg);}
 		100%    {transform:rotate(100deg);}
@@ -611,9 +611,9 @@
 	}
 	@-webkit-keyframes animationblock {
 		0%     {transform: scale(1.1)}
-		30%     {transform: scale(1.1)}
-		60%     {transform: scale(1.1)}
-		100%    {transform: scale(1.1)}
+		30%     {zoom: 50%}
+		60%     {zoom: 50%}
+		100%    {zoom: 50%}
 	.absolute-img1 {
 		-webkit-animation-name: animationblock;
 		-webkit-animation-duration: 4s;
@@ -746,4 +746,26 @@ content: '';
 }
 :-moz-placeholder { /* Firefox 18- */
 	color: #000;
+}
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    background: url('/img/spinner.gif') #FFCA03 no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+
 }
