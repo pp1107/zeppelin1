@@ -1,5 +1,9 @@
 /*==========  Desktop First Method  ==========*/
-
+@media only screen and (max-width : 1280px) {
+	.block-model:before, .block-model:after{
+		display: none;
+	}
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.block-model-item-text p{
@@ -9,8 +13,8 @@
 		font-size: 13px;
 	}
 	.block-model-item-img {
-    width: 190px;
-}
+		width: 190px;
+	}
 	.block1 ul li{
 		white-space: normal;
 		line-height: 18px;
@@ -357,8 +361,8 @@
 		text-align: center;
 	}
 	.block-model-item-text {
-    padding: 0 15px;
-}
+		padding: 0 15px;
+	}
 	.block-model-item{
 		display: block;
 	}
@@ -612,6 +616,7 @@
 	}
 }
 @media only screen and (min-width : 1366px) {
+
 	.block__main{
 		background-size: cover;
 		background-position: 55% -100px;
@@ -691,26 +696,4 @@
 }
 :-moz-placeholder { /* Firefox 18- */
 	color: #000;
-}
-#page-preloader {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background: #000;
-	z-index: 100500;
-}
-
-#page-preloader .spinner {
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	left: 0%;
-	top: 0%;
-	right: 0;
-	bottom: 0;
-	background: url('../img/spinner.gif') #FFCA03 no-repeat 50% 50%;
-	margin: -16px 0 0 -16px;
-
 }

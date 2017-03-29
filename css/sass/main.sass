@@ -1038,7 +1038,30 @@ footer
 		right: 0
 		text-align: center
 .block-model
-	padding: 0 0 20px
+	padding: 0 0 70px
+	position: relative
+	&:before
+		content: ''
+		left: 0
+		bottom: -10%
+		width: 411px
+		height: 810px
+		background-image: url("../img/bg-model-1.png")
+		background-repeat: no-repeat
+		background-size: contain
+		position: absolute
+		z-index: 1
+	&:after
+		content: ''
+		right: 0
+		bottom: 0
+		width: 534px
+		height: 796px
+		background-image: url("../img/bg-model-2.png")
+		background-repeat: no-repeat
+		background-size: contain
+		position: absolute
+		z-index: 1		
 	.h6
 		margin-bottom: 70px
 .block-model-item
@@ -1046,6 +1069,9 @@ footer
 	width: 100%
 	border: 1px solid #898989
 	margin: 0 auto 20px
+	background-color: #FFF
+	z-index: 2
+	position: relative
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
