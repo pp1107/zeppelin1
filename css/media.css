@@ -619,7 +619,7 @@
 
 	.block__main{
 		background-size: cover;
-		background-position: 55% -100px;
+		background-position: 55% 0px;
 	}
 	.block1{
 		position: relative;
